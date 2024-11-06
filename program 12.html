@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Array Elements</title>
+</head>
+<body>
+
+    <script>
+        // Function to create an array and calculate the sum
+        function sumArray() {
+            let array = [];
+            let input;
+            let sum = 0;
+
+            // Prompt the user to enter values
+            while (true) {
+                input = prompt("Enter a number (type done to finish):");
+
+                // Check if the user wants to finish entering numbers
+                if (input === null || input.toLowerCase() === 'done') {
+                    break; // Exit the loop
+                }
+
+                // Parse the input as a number
+                let number = parseFloat(input);
+                if (!isNaN(number)) {
+                    array.push(number); // Add the number to the array
+                } else {
+                    alert("Please enter a valid number.");
+                }
+            }
+
+            // Calculate the sum of the array elements
+            for (let num of array) {
+                sum += num;
+            }
+
+            // Display the sum in an alert box
+            alert("The sum of the elements is: " + sum);
+        }
+
+        // Call the function to execute the program
+        sumArray();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>country capital</title>
+    </head>
+    <body>
+        <h1>Country and its capital</h1>
+        <select id="country"onchange="capital()">
+            <option value="china">china</option>
+            <option value="India">India</option>
+            <option value="Italy">Italy</option>
+            <option value="japan">japan</option>
+            <option value="Nepal">Nepal</option>
+        </select>
+        <input type="text"id="demo" size="30">
+    <script>
+        function capital(){
+            var x=document.getElementById('country').value.toLowerCase();
+            if (x=='china')
+            document.getElementById("demo").value="capital of china is beijing";
+            else if (x=='india')
+            document.getElementById("demo").value="capital of india is New Delhi";
+            else if (x=='italy')
+            document.getElementById("demo").value="capital of italy is Rome";
+            else if (x=='japan')
+            document.getElementById("demo").value="capital of japan is tokyo";
+            else if (x=='nepal')
+            document.getElementById("demo").value="capital of nepal is kathmandu";
+        
+        }
+        </script>
+        </body>
+        </html>
+
+        
+        

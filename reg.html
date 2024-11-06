@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body style="display: flex;align-items: center;justify-content: center;height: 100vh;">
+    <form style="border: 5px solid #333;width: 300px;">
+        <table align="center">
+            <tr><th colspan="2"><h1 style="text-align: center;">APPLICATION</h1></th>
+            </tr>            <tr>
+                <td id="sa">NAME</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>AGE</td>
+                <td><input type="number" name="age"></td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td>
+                    <label><input type="radio" name="gender" value="male"> MALE</label>
+                    <label><input type="radio" name="gender" value="female"> FEMALE</label>
+                </td>
+            </tr>
+            <tr>
+                <td>PHONE</td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+            <tr>
+                <td>DISTRICT</td>
+                <td>
+                    <select>
+                        <option value="District A">District A</option>
+                        <option value="District B">District B</option>
+                        <option value="District C">District C</option>
+                        <option value="District D">District D</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>ADDRESS</td>
+                <td><textarea name="address" placeholder="Your Address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Courses</td>
+                <td>
+                    <label><input type="checkbox" name="course" value="BCA"> BCA</label>
+                    <label><input type="checkbox" name="course" value="CS"> CS</label>
+                    
+            </tr>
+            <tr>
+                <td colspan="2" align="right"><input type="submit" value="Submit"><input type="reset" ></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

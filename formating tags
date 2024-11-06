@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting Tags Example</title>
+</head>
+<body>
+
+    <h1>Heading Tags</h1>
+    
+    <h2>Text Formatting</h2>
+    
+    <p>This is a paragraph of <strong>strong</strong> and <em>emphasized</em> text.</p>
+    
+    <p>This is a <u>underlined</u> text.</p>
+    
+    <p>This is a <del>deleted</del> text.</p>
+    
+    <p>This is a <ins>inserted</ins> text.</p>
+    
+    <h2>Lists</h2>
+    
+    <ul>
+        <li>Unordered List Item 1</li>
+        <li>Unordered List Item 2</li>
+    </ul>
+    
+    <ol>
+        <li>Ordered List Item 1</li>
+        <li>Ordered List Item 2</li>
+    </ol>
+    
+    <h2>Links and Images</h2>
+    
+    <p>Visit <a href="https://www.example.com">Example</a>.</p>
+    
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+    
+    <h2>Tables</h2>
+    
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+    
+    <h2>Forms</h2>
+    
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

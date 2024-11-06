@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Textbox Colors</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Set a nice font */
+        }
+
+        #myTextbox {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 20px; /* Add some spacing */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Focus and Blur</h2>
+    <input type="text" id="myTextbox" placeholder="">
+
+    <script>
+        const textbox = document.getElementById('myTextbox');
+
+        textbox.onfocus = function() {
+            this.style.color = 'white'; // Change text color on focus
+            this.style.backgroundColor = 'blue'; // Change background color on focus
+        };
+
+        textbox.onblur = function() {
+            this.style.color = 'black'; // Change text color on blur
+            this.style.backgroundColor = 'lightgray'; // Change background color on blur
+        };
+    </script>
+
+</body>
+</html>

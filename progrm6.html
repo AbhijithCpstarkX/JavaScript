@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input[type="number"] {
+            margin: 5px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form id="calculator">
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1">
+        <br>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2">
+        <br>
+        <button type="button" onclick="performOperation('add')">Add</button>
+        <button type="button" onclick="performOperation('subtract')">Subtract</button>
+        <button type="button" onclick="performOperation('multiply')">Multiply</button>
+        <button type="button" onclick="performOperation('divide')">Divide</button>
+    </form>
+
+    <div class="result">
+        <p>Result: <span id="result">N/A</span></p>
+    </div>
+
+    <script>
+        function performOperation(operation) {
+            // Get the values from the input fields
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const resultElement = document.getElementById('result');
+
+            let result;
+
+            // Perform the selected operation
+            switch (operation) {
+                case 'add':
+                    result = num1 + num2;
+                    break;
+                case 'subtract':
+                    result = num1 - num2;
+                    break;
+                case 'multiply':
+                    result = num1 * num2;
+                    break;
+                case 'divide':
+                    if (num2 === 0) {
+                        result = 'Error: Division by zero';
+                    } else {
+                        result = num1 / num2;
+                    }
+                    break;
+                default:
+                    result = 'Invalid operation';
+            }
+
+            // Display the result
+            resultElement.textContent = result;
+        }
+    </script>
+</body>
+</html>

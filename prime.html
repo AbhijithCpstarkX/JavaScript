@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Find the nth Prime number</title>
+</head>
+<body>
+    <h1>Find the nth prime number </h1>
+        Enter a positive integer:<input type=number id="n" min="1">
+        <button onclick="findNthprime()">find</button>
+        <p id="result"></p>
+        <script>
+            function findNthprime(){
+                var n=parseInt(document.getElementById("n"),value);
+                function Isprime(num){
+                    if(num<=1)return false;
+                    for(let i=2;i<math.sqrt(num);i++){
+                        if(num%i===0){
+                            return false};
+                        }
+                        return true;
+                    }
+                    let count=0;
+                    let num=1;
+                    while(count<n){
+                        num++;
+                        if(Isprime(num))count++;
+
+                    }
+                    document.getElementById("result").innerText="The"+n+"the prime no IS:"+num
+
+                }
+                </script>
+                </body>
+                <html>
+
+            

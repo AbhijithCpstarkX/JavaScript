@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>
+        event</title>
+    </head>
+    <body>
+        <h1>onfocus and onblur event</h1>
+        <input type="text" id="text1" onfocus="focusFunction()" onblur="blurFunction()">
+        <script>
+            function focusFunction(){
+                document.getElementById("text1").style.background="black";
+                document.getElementById("text1").style.background="blue";
+            }
+            function onblurFunction(){
+                document.getElementById("text1").style.background="green";
+                document.getElementById("text1").style.background="red";
+            }
+            </script>
+    </body>
+</html>
